@@ -36,6 +36,7 @@ export const ProfileCard = styled.div`
 
   padding-top: 20px;
   margin: 0 auto;
+
   max-width: 100%;
   width: 360px;
 
@@ -68,7 +69,7 @@ export const UserAvatar = styled.img`
 `;
 
 export const UserName = styled.p`
-  color: var(--name-color);
+  color: ${props => props.theme.colors.nameColor};
   font-weight: 600;
   font-size: 28px;
   line-height: 1.07;
@@ -81,7 +82,7 @@ export const Tag = styled.p`
 `;
 
 export const Location = styled.p`
-  color: var(--location-color);
+  color: ${props => props.theme.colors.locationColor};
 `;
 
 export const Label = styled.span`

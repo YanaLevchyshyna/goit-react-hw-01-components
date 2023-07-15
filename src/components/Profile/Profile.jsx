@@ -1,5 +1,4 @@
 import PropTypes from 'prop-types';
-import css from './Profile.module.css';
 import {
   ProfileCard,
   ProfileCardDescription,
@@ -17,7 +16,7 @@ export default function Profile({ username, tag, location, avatar, stats }) {
   return (
     <ProfileCard>
       <ProfileCardDescription>
-        <UserAvatar src={avatar} alt="User avatar" className={css.avatar} />
+        <UserAvatar src={avatar} alt="User avatar" />
         <UserName>{username}</UserName>
         <Tag>@{tag}</Tag>
         <Location>{location}</Location>
@@ -46,5 +45,9 @@ Profile.propTypes = {
   tag: PropTypes.string.isRequired,
   location: PropTypes.string.isRequired,
   avatar: PropTypes.string.isRequired,
-  stats: PropTypes.objectOf(PropTypes.number).isRequired,
+  stats: PropTypes.shape({
+    followers: PropTypes.number.isRequired,
+    views: PropTypes.number.isRequired,
+    likes: PropTypes.number.isRequired,
+  }).isRequired,
 };
