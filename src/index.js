@@ -12,6 +12,8 @@ const theme = {
     statColor: '#ebf9fa',
     primary: '#08185c',
     sectionBsgColor: '#fafae8',
+    isOnline: '#0bb51f',
+    offLine: '#b01020',
   },
 };
 
