@@ -35,7 +35,10 @@ export const ProfileCard = styled.div`
   justify-content: center;
 
   padding-top: 20px;
-  margin: 0 auto;
+  margin-top: 0;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 1.5px;
 
   max-width: 100%;
   width: 360px;
@@ -43,7 +46,7 @@ export const ProfileCard = styled.div`
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
-  border-radius: 4px;
+  border-radius: 5px;
   background-color: var(--accent-color);
 `;
 

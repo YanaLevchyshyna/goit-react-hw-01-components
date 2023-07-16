@@ -3,11 +3,12 @@ import { getRandomHexColor } from 'utils/getRandomHexColor';
 
 export const StatSection = styled.section`
   text-align: center;
+  background-color: ${props => props.theme.colors.sectionBsgColor};
 `;
 
 export const StatTitle = styled.h2`
   padding-top: 100px;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   color: ${props => props.theme.colors.nameColor};
 `;
 
@@ -16,6 +17,8 @@ export const StatList = styled.ul`
   justify-content: center;
   align-items: center;
   width: 100%;
+
+  padding-bottom: 100px;
 `;
 
 export const StatItem = styled.li`
@@ -42,6 +45,7 @@ export const StatItem = styled.li`
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+
   background-color: ${props => {
     return getRandomHexColor(props.index);
   }};

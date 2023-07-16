@@ -11,6 +11,7 @@ const theme = {
     nameColor: '#031087',
     statColor: '#ebf9fa',
     primary: '#08185c',
+    sectionBsgColor: '#fafae8',
   },
 };
 
