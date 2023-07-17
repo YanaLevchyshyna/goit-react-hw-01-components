@@ -13,9 +13,9 @@ const theme = {
     statColor: '#bb2649',
     primary: '#08185c',
     sectionBsgColor: '#fafae8',
-    isOnline: '#0bb51f',
+    tableBorderColor: '#f4f4fd',
     offLine: '#b01020',
-    TableBcgColor: '#ece9e0;',
+    TableBcgColor: '#dddff8',
     TBodyDataColor: '#F5D7BF',
   },
 };

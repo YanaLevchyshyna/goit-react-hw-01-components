@@ -5,8 +5,9 @@ export const Table = styled.table`
   border-collapse: separate;
   border-spacing: 5px;
   color: #656665;
-  border: 16px solid #ece9e0;
   border-radius: 20px;
+  border: 4px solid ${props => props.theme.colors.tableBorderColor};
+  box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
   background-color: ${props => props.theme.colors.TableBcgColor};
   margin: 0 auto;
 
@@ -22,6 +23,7 @@ export const THeadRow = styled.tr`
 `;
 
 export const TTitle = styled.th`
+  color: ${props => props.theme.colors.mainTextColor};
   font-size: 18px;
   padding: 10px;
 `;
@@ -39,5 +41,5 @@ export const TBodyRow = styled.tr`
 `;
 
 export const TBodyData = styled.td`
-  background-color: ${props => props.theme.colors.TBodyDataColor};
+  background-color: ${props => props.theme.colors.accentColor};
 `;
