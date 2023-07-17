@@ -1,9 +1,12 @@
 import styled from '@emotion/styled';
 
 export const FriendItem = styled.li`
-  padding: 10px;
   display: flex;
+  gap: 12px;
+  padding: 10px;
+
   align-items: center;
+  justify-content: center
 
   max-width: 100%;
   width: 160px;
@@ -23,7 +26,6 @@ export const FriendStatus = styled.span`
   display: block;
   width: 10px;
   height: 10px;
-  margin-right: 12px;
   border-radius: 50%;
   border: 1px solid;
 
@@ -31,8 +33,6 @@ export const FriendStatus = styled.span`
 `;
 
 export const FriendAvatar = styled.img`
-  margin-right: 12px;
-
   transition: transform 0.25s;
 
   &:hover {
@@ -41,7 +41,7 @@ export const FriendAvatar = styled.img`
 `;
 
 export const FriendName = styled.p`
-  color: ${props => props.theme.colors.primary};
+  color: ${props => props.theme.colors.mainTextColor};
   font-size: 18px;
   font-weight: 500;
 `;

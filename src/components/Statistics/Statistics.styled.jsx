@@ -2,14 +2,25 @@ import styled from '@emotion/styled';
 import { getRandomHexColor } from 'utils/getRandomHexColor';
 
 export const StatSection = styled.section`
-  margin-bottom: 1.5px;
+  display: flex;
+  flex-direction: column;
+
+  margin: 0 auto;
+  margin-bottom: 50px;
   text-align: center;
+
+  max-width: 100%;
+  width: 360px;
+
+  background-color: ${props => props.theme.colors.accentColor};
+  box-shadow: -1px -1px 1px #fff, 1px 1px 1px #babecc;
+  border-radius: 8px;
 `;
 
 export const StatTitle = styled.h2`
-  padding-top: 100px;
-  margin-bottom: 30px;
-  color: ${props => props.theme.colors.nameColor};
+  padding: 18px;
+
+  color: ${props => props.theme.colors.mainTextColor};
 `;
 
 export const StatList = styled.ul`
@@ -17,8 +28,6 @@ export const StatList = styled.ul`
   justify-content: center;
   align-items: center;
   width: 100%;
-
-  padding-bottom: 100px;
 `;
 
 export const StatItem = styled.li`

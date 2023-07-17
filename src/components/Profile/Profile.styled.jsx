@@ -38,7 +38,7 @@ export const ProfileCard = styled.div`
   margin-top: 50px;
   margin-right: auto;
   margin-left: auto;
-  margin-bottom: 1.5px;
+  margin-bottom: 50px;
 
   max-width: 100%;
   width: 360px;
@@ -77,7 +77,7 @@ export const UserAvatar = styled.img`
 `;
 
 export const UserName = styled.p`
-  color: ${props => props.theme.colors.nameColor};
+  color: ${props => props.theme.colors.mainTextColor};
   font-weight: 600;
   font-size: 28px;
   line-height: 1.07;
