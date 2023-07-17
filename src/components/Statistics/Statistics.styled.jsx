@@ -4,7 +4,6 @@ import { getRandomHexColor } from 'utils/getRandomHexColor';
 export const StatSection = styled.section`
   margin-bottom: 1.5px;
   text-align: center;
-  background-color: ${props => props.theme.colors.sectionBsgColor};
 `;
 
 export const StatTitle = styled.h2`

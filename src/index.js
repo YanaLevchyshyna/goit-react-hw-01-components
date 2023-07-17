@@ -6,6 +6,7 @@ import { ThemeProvider } from '@emotion/react';
 
 const theme = {
   colors: {
+    profileHoverColor: '#2905b5',
     locationColor: '#4287f5',
     accentColor: '#e7e9fc',
     nameColor: '#031087',

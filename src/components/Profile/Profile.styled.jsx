@@ -20,8 +20,8 @@ export const ListItem = styled.li`
   flex-direction: column;
   width: 100%;
 
-  border-right: 1px solid #8e8f99;
-  border-top: 1px solid #8e8f99;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+  border-top: 1px solid rgba(33, 33, 33, 0.2);
 
   &:last-child {
     border-right: none;
@@ -35,7 +35,7 @@ export const ProfileCard = styled.div`
   justify-content: center;
 
   padding-top: 20px;
-  margin-top: 0;
+  margin-top: 50px;
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 1.5px;
@@ -46,8 +46,13 @@ export const ProfileCard = styled.div`
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+
   border-radius: 5px;
-  background-color: var(--accent-color);
+
+   &:hover {
+    background-color: ${props => props.theme.colors.accentColor}; 
+    color: ${props => props.theme.colors.profileHoverColor};
+    transform: scale(1.1);
 `;
 
 export const ProfileCardDescription = styled.div`
