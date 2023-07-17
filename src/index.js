@@ -14,6 +14,8 @@ const theme = {
     sectionBsgColor: '#fafae8',
     isOnline: '#0bb51f',
     offLine: '#b01020',
+    TableBcgColor: '#ece9e0;',
+    TBodyDataColor: '#F5D7BF',
   },
 };
 

@@ -6,4 +6,5 @@ export const FriendsList = styled.ul`
   align-items: center;
   justify-content: center;
   gap: 12px;
+  margin-bottom: 50px;
 `;
